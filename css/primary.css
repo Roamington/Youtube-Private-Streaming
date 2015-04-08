@@ -1,0 +1,74 @@
+body {
+    background: #101010 url("../img/body.png");   
+}
+
+#wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#Stream {
+    background: #101010;
+    border-color: #050505;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#Panel-Heading {
+    background: #050505;
+    border-color: #050505;
+    color: #585858;
+}
+#Panel-Footer {
+    background: #050505;
+    border-color: #050505;
+    color: #585858;
+}
+#top {
+    background: transparent;
+    height: 75px;
+    width: 1000px;
+    text-align: center;
+    margin-top: 50px;
+}
+#Video-Input {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 500px;
+}
+
+#Video-Post {
+    background: #070707;
+    color: #585858;
+    border-color: #000000;
+}
+
+#Video-Button {
+    background: #e52d27;
+    width: 200px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #b31217;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: #f7f7f7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#answer {
+    background: transparent;
+    height: 50px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 25px; 
+    border-color: transparent;
+}
