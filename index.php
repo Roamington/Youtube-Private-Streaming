@@ -49,7 +49,7 @@
                  <?php
                     // if Stream Access
                         if($StreamAccess == 0)
-                            echo 'Youtube Private Video Streaming';   
+                            echo '<center>Youtube Private Video Streaming</center>';   
                         else
                             echo "<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> &nbsp;".$VideoName.'<div style="float: right;"><a href="?stream=empty"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></div>';
                             
@@ -84,7 +84,7 @@
                  <?php
                     // if Stream Access
                         if($StreamAccess == 0){
-                            echo '&copy; Copyright '.$copyright.' '.date(Y).'.';   
+                            echo '<center>&copy; Copyright '.$copyright.' '.date(Y).'.</center>';   
                         }else{
                             // Print Video details
                              echo '
