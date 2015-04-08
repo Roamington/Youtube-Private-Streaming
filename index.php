@@ -82,9 +82,9 @@
                 <div class="panel-footer" id="Panel-Footer">
                  <?php
                     // if Stream Access
-                        if($StreamAccess == 0){
+                        if($StreamAccess == 0)
                             echo '<center>&copy; Copyright '.$copyright.' '.date(Y).'.</center>';   
-                        }else{
+                        else
                             // Print Video details
                              echo '
                              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> <font color="#d7d7d7">'.number_format($VideoViews,0,".",".").'</font>
@@ -99,7 +99,7 @@
                                 Download: &nbsp;<a href="http://convert2mp3.net/c-mp4.php?url=http://www.youtube.com/watch?v='.$_GET['stream'].'" target="_blank">MP4</a>&nbsp;or&nbsp;<a href="http://convert2mp3.net/c-mp3.php?url=http://www.youtube.com/watch?v='.$_GET['stream'].'" target="_blank">MP3</a>
                              </div>
                              ';
-                        }
+                        
                  ?>
                 </div>
              </div>
