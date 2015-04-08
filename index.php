@@ -50,7 +50,7 @@
                         if($StreamAccess == 0)
                             echo '<center>Youtube Private Video Streaming</center>';   
                         else
-                            echo "<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> &nbsp;".$VideoName.'<div style="float: right;"><a href="?stream=empty"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></div>';
+                            echo "<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> &nbsp;".$VideoName.'<div style="float: right;"><a href="index.php?stream='.$_GET["stream"].'"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></a> &nbsp;&nbsp;<a href="?stream=empty"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></div>';
                             
                  ?>
                 </div>
