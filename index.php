@@ -4,7 +4,7 @@
         // Var : Content
         $title = "Youtube Private Streaming";
         $copyright = "Youtube Private Streaming";
-        $logo = "img/logo.png"; // Example: http://www.myimages.com/images/logo.png Size: 300x35 px
+        $logo = "img/logo.png"; // Example: http://www.myimages.com/images/logo.png Size: 300x75 px
 
     // Private Youtube Video Streaming
 
