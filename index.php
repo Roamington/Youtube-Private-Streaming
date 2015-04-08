@@ -6,7 +6,7 @@
         $copyright = "Youtube Private Streaming";
         $logo = "img/logo.png"; // Example: http://www.myimages.com/images/logo.png Size: 300x75 px
 
-    // Private Youtube Video Streaming
+    // Youtube Private Video Streaming
 
         if($_GET['stream'] == "" || $_GET['stream'] == "empty"){
             $StreamAccess = 0;
