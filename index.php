@@ -8,12 +8,10 @@
 
     // Private Youtube Video Streaming
 
-        
-
         if($_GET['stream'] == "" || $_GET['stream'] == "empty"){
             $StreamAccess = 0;
         }else{
-            $StreamAccess = 1;   
+            $StreamAccess = 1;
         }
 
         $VideoFile = file_get_contents("http://gdata.youtube.com/feeds/api/videos/".$_GET['stream']."?v=2&alt=json");
@@ -23,6 +21,7 @@
         $VideoViews = $VideoGet['entry']['yt$statistics']['viewCount'];
         $VideoLikes = $VideoGet['entry']['yt$rating']['numLikes'];
         $VideoDislikes = $VideoGet['entry']['yt$rating']['numDislikes'];
+        $VideoPublished = $VideoGet['entry']['published']['$t'];
 
         $Stream = '<iframe width="965" height="575" src="https://www.youtube.com/embed/'.$_GET['stream'].'?autohide=0&cc_load_policy=0&fs=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>';
 
@@ -93,6 +92,9 @@
                              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <font color="#d7d7d7">'.number_format($VideoLikes,0,".",".").'</font>
                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                              <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <font color="#d7d7d7">'.number_format($VideoDislikes,0,".",".").'</font>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <font color="#d7d7d7">'.substr(str_replace('-','/',$VideoPublished),0,-14).'</font>
+                             
                              <div style="float: right;">
                                 Download: &nbsp;<a href="http://convert2mp3.net/c-mp4.php?url=http://www.youtube.com/watch?v='.$_GET['stream'].'" target="_blank">MP4</a>&nbsp;or&nbsp;<a href="http://convert2mp3.net/c-mp3.php?url=http://www.youtube.com/watch?v='.$_GET['stream'].'" target="_blank">MP3</a>
                              </div>
